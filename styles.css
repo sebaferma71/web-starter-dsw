@@ -50,9 +50,13 @@ body {
 }
 
 .text-bio {
-    text-align: justify;
+    text-align: center;
     font-style: italic;
-    line-height: 2;
+    line-height: 1;
+}
+
+span.negrita {
+    font-weight: bold;
 }
 
 /* Contacto */
@@ -75,6 +79,15 @@ h2 {
 }
 
 .show-error {
+    display: block;
+}
+
+.exito {
+    color: green;
+    display: none;
+}
+
+.show-exito {
     display: block;
 }
 

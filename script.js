@@ -6,16 +6,22 @@ window.addEventListener('load', () => {
         event.preventDefault();
         const name = document.querySelector('#name').value;
         const email = document.querySelector('#email').value;
+        const number = document.querySelector('#number').value;
         const message = document.querySelector('#message').value;
 
-        if (name !== '' && email !== '' && message !== '') {
+        if (name !== '' && email !== '' && number !=='' && message !== '') {
             // ok
             document.querySelector('#user-name').innerHTML = name;
             document.querySelector('#user-email').innerHTML = email;
+            document.querySelector('#user-number').innerHTML = number;
             document.querySelector('#user-message').innerHTML = message;
+
+            document.querySelector('#exito').classList.add('show-exito');
+            document.querySelector('#error').classList.remove('show-error');
         } else {
             // error
             document.querySelector('#error').classList.add('show-error');
+            document.querySelector('#exito').classList.remove('show-exito');
         }
     });
 
