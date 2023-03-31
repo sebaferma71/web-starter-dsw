@@ -1,127 +1,127 @@
-$colorBlack: #000000;
-$colorWhite: #ffffff;
-$colorFirst: #fae1ad;
-$colorError: #b10000;
-$colorSuccess: #2ab400;
+$color_1: #b10000;
+$color_2: #2ab400;
+$font-family_1: Arial, Helvetica, sans-serif;
+$background-color_1: #ffffff;
+$background-color_2: #f0f0f0;
+$border-top-color_1: #000000;
+$border-left-color_1: #000000;
 
-.container {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    &-right {
-        width: 100%;
-        background-color: $colorFirst;
-        padding: 1rem;
-        border-left-style: solid;
-        border-left-color: $colorBlack;
-        border-left-width: 2px;
-    }
-    &-left {
-        width: 20%;
-        background-color: $colorWhite;
-        padding: 1rem;
-    }
+body {
+	font-family: $font-family_1;
 }
-
 @media (min-width: 768px) {
-    .container {
-            flex-direction: row;
+	.container {
+		display: flex;
+		height: 100vh;
+		flex-direction: row;
         &-right {
-            width: 100%;
-            background-color: $colorFirst;
+            width: 80vw;
+            background-color: $background-color_1;
             padding: 1rem;
-            border-left-width: 2px;
+            border-left-style: solid;
+            border-left-color: $border-left-color_1;
+            border-left-width: 3px;
         }
         &-left {
-            width: 20%;
-            background-color: $colorWhite;
+            width: 20vw;
+            background-color: $background-color_2;
             padding: 1rem;
         }
-    }
+	}
+	.menu-item {
+		display: block;
+		padding: 1rem;
+		margin-bottom: 1rem;
+		background-color: $background-color_1;
+		border: 1px solid;
+		text-align: center;
+	}
 }
-
-.menu-item {
-    display: block;
-    margin-bottom: 1rem;
-    background-color: $colorFirst;
-    border: 1px solid;
-    text-align: center;
+@media (max-width: 768px) {
+	.container {
+		display: flex;
+		height: 100vh;
+		flex-direction: column;
+        &-right {
+            width: 100vw;
+            height: 100vh;
+            background-color: $background-color_1;
+            padding: 1rem;
+            border-top-style: solid;
+            border-top-color: $border-top-color_1;
+            border-top-width: 3px;
+        }
+		&-left {
+			width: 100vw;
+			background-color: $background-color_2;
+			padding: 1rem;
+		}
+		.menu-item {
+			display: inline-block;
+			padding: 1rem;
+			margin: 1rem;
+			background-color: $background-color_1;
+			border: 1px solid;
+			text-align: center;
+		}
+	}
 }
-
 .homero-img {
-    width: 80%;
-    height: 90%;
+	width: 80%;
+	height: 90%;
 }
-
-/* Bio */
 .img-bio {
-    display: block;
-    margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 }
-
 .text-bio {
-    text-align: center;
-    font-style: italic;
-    line-height: 1;
+	text-align: center;
+	font-style: italic;
+	line-height: 1;
 }
-
-span.negrita {
-    font-weight: bold;
+.negrita {
+	font-weight: bold;
 }
-
-/* Contacto */
 h2 {
-    margin-top: 0;
+	margin-top: 0;
 }
-
 .form-control {
-    display: block;
-    margin: 0.5rem 0;
+	display: block;
+	margin: 0.5rem 0;
 }
-
 .form-button {
-    display: block;
+	display: block;
 }
-
 .error {
-    color: $colorError;
-    display: none;
+	color: $color_1;
+	display: none;
 }
-
 .show-error {
-    display: block;
+	display: block;
 }
-
 .exito {
-    color: $colorSuccess;
-    display: none;
+	color: $color_2;
+	display: none;
 }
-
 .show-exito {
-    display: block;
+	display: block;
 }
-
-/* User */
 .user-img {
-    display: block;
-    margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 }
-
 #get-user {
-    display: block;
-    margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 }
-
 .user {
-    text-align: center;
-    margin: 0 auto;
+	text-align: center;
+	margin: 0 auto;
 }
-
 .error-api {
-    color: $colorError;
-    display: none;
+	color: $color_1;
+	display: none;
 }
-
 .show-error-api {
-    display: block;
+	display: block;
 }
