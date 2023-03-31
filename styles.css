@@ -1,108 +1,122 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
+@media (min-width: 768px) {
+  .container {
     display: flex;
     height: 100vh;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-    }
-}
-
-.container-left {
-    width: 20%;
-    background-color: white;
-    padding: 1rem;
-}
-
-.container-right {
+    flex-direction: row;
+  }
+  .container-right {
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #fae1ad;
     padding: 1rem;
     border-left-style: solid;
-    border-left-color: black;
+    border-left-color: #000000;
     border-left-width: 2px;
+  }
+  .container-left {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 1rem;
+  }
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container-right {
+    width: 100%;
+    background-color: #fae1ad;
+    padding: 1rem;
+    border-left-width: 2px;
+  }
+  .container-left {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 1rem;
+  }
+}
 .menu-item {
-    display: block;
-    margin-bottom: 1rem;
-    background-color: aqua;
-    border: 1px solid;
-    text-align: center;
+  display: block;
+  margin-bottom: 1rem;
+  background-color: #fae1ad;
+  border: 1px solid;
+  text-align: center;
 }
 
 .homero-img {
-    width: 80%;
-    height: 90%;
+  width: 80%;
+  height: 90%;
 }
 
 /* Bio */
 .img-bio {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .text-bio {
-    text-align: center;
-    font-style: italic;
-    line-height: 1;
+  text-align: center;
+  font-style: italic;
+  line-height: 1;
 }
 
 span.negrita {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Contacto */
 h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .form-control {
-    display: block;
-    margin: 0.5rem 0;
+  display: block;
+  margin: 0.5rem 0;
 }
 
 .form-button {
-    display: block;
+  display: block;
 }
 
 .error {
-    color: red;
-    display: none;
+  color: #b10000;
+  display: none;
 }
 
 .show-error {
-    display: block;
+  display: block;
 }
 
 .exito {
-    color: green;
-    display: none;
+  color: #2ab400;
+  display: none;
 }
 
 .show-exito {
-    display: block;
+  display: block;
 }
 
 /* User */
 .user-img {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #get-user {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .user {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.error-api {
+  color: #b10000;
+  display: none;
+}
+
+.show-error-api {
+  display: block;
 }

@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
         const number = document.querySelector('#number').value;
         const message = document.querySelector('#message').value;
 
-        if (name !== '' && email !== '' && number !=='' && message !== '') {
+        if (name !== '' && email !== '' && number !== '' && message !== '') {
             // ok
             document.querySelector('#user-name').innerHTML = name;
             document.querySelector('#user-email').innerHTML = email;
@@ -37,5 +37,7 @@ function getUser() {
             const userData = response.results[0].name;
             document.querySelector('#user-name').innerHTML = `${userData.title}. ${userData.first} ${userData.last}`;
         })
-        .catch((error) => console.log('aja', error));
+        .catch((error) => {
+            document.querySelector('#error-api').classList.add('show-error-api');
+        });
 }
