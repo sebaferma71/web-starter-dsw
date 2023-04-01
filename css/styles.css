@@ -30,7 +30,6 @@ body {
     text-align: center;
   }
 }
-
 @media (max-width: 768px) {
   .container {
     display: flex;
@@ -51,7 +50,7 @@ body {
     background-color: #f0f0f0;
     padding: 1rem;
   }
-  .menu-item {
+  .container .menu-item {
     display: inline-block;
     padding: 1rem;
     margin: 1rem;
@@ -60,13 +59,11 @@ body {
     text-align: center;
   }
 }
-
 .homero-img {
   width: 80%;
   height: 90%;
 }
 
-/* Bio */
 .img-bio {
   display: block;
   margin: 0 auto;
@@ -82,7 +79,6 @@ body {
   font-weight: bold;
 }
 
-/* Contacto */
 h2 {
   margin-top: 0;
 }
@@ -114,7 +110,6 @@ h2 {
   display: block;
 }
 
-/* User */
 .user-img {
   display: block;
   margin: 0 auto;
@@ -137,4 +132,4 @@ h2 {
 
 .show-error-api {
   display: block;
-}
+}/*# sourceMappingURL=styles.css.map */
