@@ -36,8 +36,11 @@ function getUser() {
         .then((response) => {
             const userData = response.results[0].name;
             document.querySelector('#user-name').innerHTML = `${userData.title}. ${userData.first} ${userData.last}`;
+
+            document.getElementById('#user-img').src = `${userData.picture}`;
         })
         .catch((error) => {
             document.querySelector('#error-api').classList.add('show-error-api');
+            console.log(error);
         });
 }
