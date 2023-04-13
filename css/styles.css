@@ -21,7 +21,7 @@ body {
     background-color: #f0f0f0;
     padding: 1rem;
   }
-  .menu-item {
+  .container-left .menu-item {
     display: block;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -50,19 +50,7 @@ body {
     background-color: #f0f0f0;
     padding: 1rem;
   }
-  .menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #2ab400;
-    width: 100%;
-    top: auto;
-    left: auto;
-    bottom: auto;
-    right: auto;
-    margin: auto;
-  }
-  .container .menu-item {
+  .container-left .menu-item {
     display: inline-block;
     padding: 1rem;
     margin: 1rem;
@@ -144,4 +132,6 @@ h2 {
 
 .show-error-api {
   display: block;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
