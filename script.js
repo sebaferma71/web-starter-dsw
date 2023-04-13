@@ -34,13 +34,15 @@ function getUser() {
             return data.json();
         })
         .then((response) => {
+            console.log(response)
             const userData = response.results[0].name;
             document.querySelector('#user-name').innerHTML = `${userData.title}. ${userData.first} ${userData.last}`;
-
-            document.getElementById('#user-img').src = `${userData.picture}`;
+            
+            let imagen = document.getElementById('#user-img');
+            const userDataImagen = userData.picture;
+            imagen.src = userDataImagen.large;
         })
         .catch((error) => {
             document.querySelector('#error-api').classList.add('show-error-api');
-            console.log(error);
         });
 }
