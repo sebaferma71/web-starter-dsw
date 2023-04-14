@@ -38,11 +38,12 @@ function getUser() {
             const userData = response.results[0].name;
             document.querySelector('#user-name').innerHTML = `${userData.title}. ${userData.first} ${userData.last}`;
             
-            let imagen = document.getElementById('#user-img');
-            const userDataImagen = userData.picture;
-            imagen.src = userDataImagen.large;
+            let imagen = document.getElementById('user-img');
+            const userDataImag = userData.picture;
+            imagen.src = userDataImag.large;
         })
         .catch((error) => {
+            console.log(error);
             document.querySelector('#error-api').classList.add('show-error-api');
         });
 }

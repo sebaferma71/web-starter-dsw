@@ -5,10 +5,11 @@ body {
 @media (min-width: 768px) {
   .container {
     display: flex;
-    height: 100vh;
     flex-direction: row;
+    height: 100vh;
+    width: 100vw;
   }
-  .container-right {
+  .container .content {
     width: 80vw;
     background-color: #ffffff;
     padding: 1rem;
@@ -16,15 +17,14 @@ body {
     border-left-color: #000000;
     border-left-width: 3px;
   }
-  .container-left {
+  .container .menu {
     width: 20vw;
     background-color: #f0f0f0;
-    padding: 1rem;
   }
-  .container-left .menu-item {
+  .container .menu .menu-item {
     display: block;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     background-color: #ffffff;
     border: 1px solid;
     text-align: center;
@@ -32,26 +32,26 @@ body {
 }
 @media (max-width: 768px) {
   .container {
-    display: flex;
     height: 100vh;
-    flex-direction: column;
-  }
-  .container-right {
     width: 100vw;
-    height: 100vh;
+  }
+  .container .content {
     background-color: #ffffff;
     padding: 1rem;
     border-top-style: solid;
     border-top-color: #000000;
     border-top-width: 3px;
   }
-  .container-left {
-    width: 100vw;
-    background-color: #f0f0f0;
+  .container .menu {
+    display: flex;
+    flex-direction: row;
     padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
   }
-  .container-left .menu-item {
-    display: inline-block;
+  .container .menu .menu-item {
+    display: block;
     padding: 1rem;
     margin: 1rem;
     background-color: #ffffff;
