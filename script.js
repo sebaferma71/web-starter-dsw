@@ -36,11 +36,10 @@ function getUser() {
         .then((response) => {
             console.log(response)
             const userData = response.results[0].name;
+            const userDataImg = response.results[0].picture;
+
             document.querySelector('#user-name').innerHTML = `${userData.title}. ${userData.first} ${userData.last}`;
-            
-            let imagen = document.getElementById('user-img');
-            const userDataImag = userData.picture;
-            imagen.src = userDataImag.large;
+            document.querySelector('#user-img').src = `${userDataImg.large}`;
         })
         .catch((error) => {
             console.log(error);
