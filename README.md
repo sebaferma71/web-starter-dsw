@@ -1,5 +1,5 @@
-# Html + CSS + Javascript
 # Proyecto inicial simple
+## HTML + SCSS + JavaScript
 
 ## Requerimientos
 - Para poder levantar el sitio web se requiere de un servidor web local. Se puede utilizar http-server (https://www.npmjs.com/package/http-server)
