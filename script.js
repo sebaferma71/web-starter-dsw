@@ -1,5 +1,3 @@
-console.log('Hola Mundo');
-
 window.addEventListener('load', () => {
     const submitButton = document.querySelector('#submit');
     submitButton?.addEventListener('click', (event) => {
@@ -34,12 +32,12 @@ function getUser() {
             return data.json();
         })
         .then((response) => {
-            console.log(response)
+            console.log(response);
             const userData = response.results[0].name;
             const userDataImg = response.results[0].picture;
 
             document.querySelector('#user-name').innerHTML = `${userData.title}. ${userData.first} ${userData.last}`;
-            document.querySelector('#user-img').src = `${userDataImg.large}`;
+            document.querySelector('.user-img').src = `${userDataImg.large}`;
         })
         .catch((error) => {
             console.log(error);
